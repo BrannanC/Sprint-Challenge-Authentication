@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.App .Form {
+  padding: 20px;
+  border: 2px solid grey;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.App .Form input {
+  font-size: 2rem;
+  margin: 10px auto;
+}
+
+.App .Form button {
+  font-size: 2rem;
+  margin: 10px auto;
+}
+
+.App .Form button:hover {
+  color: lightgrey;
+  background: black;
+  cursor: pointer;
+}
+
+.App .Jokes {
+  border: 2px solid grey;
+  margin: 20px auto;
+  text-align: left;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App .Jokes h2 {
+  margin: 20px;
+  text-decoration: underline;
+}
+
+.App .Jokes li {
+  margin: 10px 0;
+}
+
+.App .Jokes .hidden {
+  background: grey;
+  border-radius: 6px;
+}
+
+.App .Jokes .page-buttons {
+  text-align: center;
+}
