@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
+const db = require('../database/dbConfig');
 
 const configureRoutes = require('../config/routes.js');
 
@@ -11,5 +12,6 @@ server.use(cors());
 server.use(express.json());
 
 configureRoutes(server);
+
 
 module.exports = server;
