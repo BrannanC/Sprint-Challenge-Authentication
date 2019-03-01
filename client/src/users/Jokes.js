@@ -50,16 +50,21 @@ class Jokes extends React.Component {
   render() {
     return (
       <div className="Jokes">
-        <h2>List of Jokes</h2>
+      <div className="top">
+      <h2>List of Jokes</h2>
         <ul>
           {this.state.error && <p>{this.state.error}</p>}
           {this.state.jokes.map(j => (
             <li key={j.id}>{j.joke}</li>
           ))}
-          <button onClick={this.decrement}>←</button>
-          {this.state.page}
-          <button onClick={this.increment}>→</button>
         </ul>
+      </div>
+
+        <div className="page-buttons">
+          <button onClick={this.decrement} className={this.state.page === 1 ? 'hidden' : 'left'}>←</button>
+          {this.state.page}
+          <button onClick={this.increment} className={this.state.page === 10 ? 'hidden' : 'right'}>→</button>
+        </div>
       </div>
     );
   }

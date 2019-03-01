@@ -31,6 +31,10 @@
   border: 2px solid grey;
   margin: 20px auto;
   text-align: left;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .App .Jokes h2 {
@@ -40,4 +44,13 @@
 
 .App .Jokes li {
   margin: 10px 0;
+}
+
+.App .Jokes .hidden {
+  background: grey;
+  border-radius: 6px;
+}
+
+.App .Jokes .page-buttons {
+  text-align: center;
 }
